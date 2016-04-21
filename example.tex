@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage[backend=biber]{biblatex}
+\usepackage{hyperref}
+
+\addbibresource{example.bib}
+
+%% latex, biber, latex
+
+\title{The title}
+
+\author{The Author\\
+  %% based on https://github.com/gbluma/latex-boilerplate/blob/master/document.tex
+  %% \small{Class Number - Class Name}\\
+  \small{The Institution}\\
+  \small{\texttt{the@email.edu}}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Blah blah.
+
+As pointed out in \cite{Reference_One}.
+
+\printbibliography
+
+\end{document}
